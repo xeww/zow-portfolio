@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&family=Quicksand:wght@300..700&display=swap');@import "tailwindcss";
+
+@theme {
+    --font-display: "Quicksand", sans-serif;
+    --font-special: "Birthstone", sans-serif;
+    --color-green-primary: #6ED483;
+    --color-light-dark: #3D3838;
+    --color-default-dark: #2B2828;
+}
