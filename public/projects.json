@@ -1,0 +1,62 @@
+[
+  {
+    "id": 0,
+    "name": "Japanese Lobby",
+    "image": "./build_1.png"
+  },
+  {
+    "id": 1,
+    "name": "x4 Arena",
+    "image": "./build_2.png"
+  },
+  {
+    "id": 2,
+    "name": "Medieval Arena",
+    "image": "./build_3.png"
+  },
+  {
+    "id": 3,
+    "name": "Space Pit",
+    "image": "./build_4.png"
+  },
+  {
+    "id": 4,
+    "name": "Forest Arena",
+    "image": "./build_5.png"
+  },
+  {
+    "id": 5,
+    "name": "Arabic Lobby & Warzone",
+    "image": "./build_6.png"
+  },
+  {
+    "id": 6,
+    "name": "Ancient Greek Lobby",
+    "image": "./build_7.png"
+  },
+  {
+    "id": 7,
+    "name": "Small Lobby",
+    "image": "./build_8.png"
+  },
+  {
+    "id": 8,
+    "name": "Fantasy Lobby",
+    "image": "./build_9.png"
+  },
+  {
+    "id": 9,
+    "name": "Sumo Arenas",
+    "image": "./build_10.png"
+  },
+  {
+    "id": 10,
+    "name": "Medieval KOTH",
+    "image": "./build_11.png"
+  },
+  {
+    "id": 11,
+    "name": "Tropical Lobby",
+    "image": "./build_12.png"
+  }
+]

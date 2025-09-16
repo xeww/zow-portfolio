@@ -13,7 +13,16 @@ export default function ContentWrapper({
   py: number;
 }) {
   return (
-    <div className={`mx-auto w-full max-w-[${maxWidth}] px-${px} py-${py}`}>
+    <div
+      className="mx-auto w-full"
+      style={{
+        maxWidth: maxWidth,
+        paddingLeft: px,
+        paddingRight: px,
+        paddingTop: py,
+        paddingBottom: py,
+      }}
+    >
       {children}
     </div>
   );
