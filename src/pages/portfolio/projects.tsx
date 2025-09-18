@@ -1,60 +1,8 @@
-import { MessageCircleQuestionMark } from "lucide-react";
-import { Link } from "react-router";
-import ContentWrapper from "../components/contentWrapper.tsx";
 import { useEffect, useState } from "react";
-import type { Project } from "../types/project.ts";
+import type { Project } from "@/types/project.ts";
+import ContentWrapper from "@/components/contentWrapper";
 
-export default function PortfolioPage() {
-  return (
-    <>
-      <WelcomeSection />
-      <ProjectsSection />
-    </>
-  );
-}
-
-function WelcomeSection() {
-  return (
-    <section className="bg-default-dark relative h-[600px] w-full">
-      <img
-        src="/illustration_1.webp"
-        alt="background illustatrion"
-        className="h-full w-full rounded-b-4xl object-cover"
-      />
-      <WelcomeText />
-    </section>
-  );
-}
-
-function WelcomeText() {
-  return (
-    <div className="absolute top-15 right-0 bottom-0 left-0 z-10 flex flex-col items-center justify-center">
-      <h2 className="font-display mb-4 text-3xl font-bold text-white">
-        Welcome to my Portfolio
-      </h2>
-      <p className="font-display text-center text-lg text-white">
-        Discover my most recent builds !
-        <br />
-        Any question ? Join my Discord server for support.
-      </p>
-      <DiscordButton />
-    </div>
-  );
-}
-
-function DiscordButton() {
-  return (
-    <Link
-      to="https://discord.gg/HnPG2bVFKm"
-      className="font-display bg-green-secondary mt-6 flex items-center gap-1 rounded-3xl px-8 py-2 text-white transition duration-200 ease-in-out hover:scale-105 active:translate-y-1"
-    >
-      <MessageCircleQuestionMark />
-      <p className="text-xl">Join my Discord</p>
-    </Link>
-  );
-}
-
-function ProjectsSection() {
+export function Projects() {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
@@ -85,7 +33,7 @@ function ProjectsSection() {
         </h1>
         <div className={"grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3"}>
           {projects.map((project: Project) => (
-            <Project
+            <ProjectCard
               key={project.id}
               name={project.name}
               image={project.image}
@@ -97,7 +45,7 @@ function ProjectsSection() {
   );
 }
 
-function Project({ name, image }: { name: string; image: string }) {
+export function ProjectCard({ name, image }: { name: string; image: string }) {
   return (
     <article
       data-aos="fade-up"

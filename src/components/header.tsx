@@ -1,6 +1,6 @@
 import { Link, NavLink, useLocation } from "react-router";
 import { ShoppingBagIcon } from "lucide-react";
-import { scrollToTop } from "../utils.ts";
+import { scrollToTop } from "@/utils.ts";
 
 export default function Header() {
   return (

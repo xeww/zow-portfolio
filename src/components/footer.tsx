@@ -1,6 +1,6 @@
 import ContentWrapper from "./contentWrapper.tsx";
 import { Link } from "react-router";
-import { scrollToTop } from "../utils.ts";
+import { scrollToTop } from "@/utils.ts";
 
 export default function Footer() {
   return (
