@@ -17,10 +17,10 @@ export function Welcome() {
 export function WelcomeText() {
   return (
     <div className="absolute top-15 right-0 bottom-0 left-0 z-10 flex flex-col items-center justify-center">
-      <h2 className="font-display mb-4 text-3xl font-bold text-white">
+      <h2 className="font-display mb-4 text-3xl font-bold text-white drop-shadow-[0_0_2px_black]">
         Welcome to my Portfolio
       </h2>
-      <p className="font-display text-center text-lg text-white">
+      <p className="font-display text-center text-lg text-white drop-shadow-[0_0_2px_black]">
         Discover my most recent builds !
         <br />
         Any question ? Join my Discord server for support.
