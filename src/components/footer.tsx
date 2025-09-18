@@ -44,12 +44,17 @@ function Links() {
       />
       <SingleLink text={"Portfolio"} link={"/"} />
       <SingleLink text={"Contact"} link={"/contact"} />
+      <SingleLink text={"Discord"} link={"https://discord.gg/HnPG2bVFKm"} />
     </div>
   );
 }
 
 function SingleLink({ text, link }: { text: string; link: string }) {
-  return <Link to={link}>{text}</Link>;
+  return (
+    <Link to={link} className={"hover:underline hover:underline-offset-4"}>
+      {text}
+    </Link>
+  );
 }
 
 function Credit() {

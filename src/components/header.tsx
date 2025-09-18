@@ -17,12 +17,14 @@ export default function Header() {
 
 function Title() {
   return (
-    <h1
-      className="font-special cursor-pointer text-5xl font-bold text-white"
-      onClick={scrollToTop}
-    >
-      Zow's Builds
-    </h1>
+    <NavLink to={"/"}>
+      <h1
+        className="font-special cursor-pointer text-5xl font-bold text-white"
+        onClick={scrollToTop}
+      >
+        Zow's Builds
+      </h1>
+    </NavLink>
   );
 }
 
