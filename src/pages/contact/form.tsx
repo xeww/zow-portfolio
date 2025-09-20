@@ -3,7 +3,7 @@ import { ArrowRightIcon } from "lucide-react";
 export default function ContactForm() {
   return (
     <form
-      action="https://formspree.io/f/xvgbjern"
+      action="https://formspree.io/f/xpwjvkej"
       method="POST"
       className={
         "bg-light-dark mx-auto mt-12 flex w-full max-w-[640px] flex-col items-center justify-center gap-6 rounded-2xl p-4 text-white"
